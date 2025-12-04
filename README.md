@@ -4,7 +4,7 @@ Official ArgoCD Extension Installer container image optimized for enterprise env
 
 **📌 CleanStart Foundation:** Security-hardened, minimal base OS designed for enterprise containerized environments.
 
-**Image Path:** `cleanstart/argocd-extension-installer`
+**Image Path:** `ghcr.io/cleanstart-containers/argocd-extension-installer`
 
 **Registry:** CleanStart Registry
 
@@ -49,24 +49,24 @@ Typical scenarios where this container excels:
 
 Download the runtime container images:
 ```bash
-docker pull cleanstart/argocd-extension-installer:latest
+docker pull ghcr.io/cleanstart-containers/argocd-extension-installer:latest
 ```
 ```bash
-docker pull cleanstart/argocd-extension-installer:latest-dev
+docker pull ghcr.io/cleanstart-containers/argocd-extension-installer:latest-dev
 ```
 
 ### Interactive Development
 
 Start interactive session for development:
 ```bash
-docker run --rm -it --entrypoint /bin/sh cleanstart/argocd-extension-installer:latest-dev
+docker run --rm -it --entrypoint /bin/sh ghcr.io/cleanstart-containers/argocd-extension-installer:latest-dev
 ```
 
 ### Container Start
 
 Start the container:
 ```bash
-docker run --rm -it --name argocd-extension-dev cleanstart/argocd-extension-installer:latest
+docker run --rm -it --name argocd-extension-dev ghcr.io/cleanstart-containers/argocd-extension-installer:latest
 ```
 
 ---
@@ -91,10 +91,10 @@ CleanStart images support multiple architectures to ensure compatibility across 
 
 ### Multi-Platform Images
 ```bash
-docker pull --platform linux/amd64 cleanstart/argocd-extension-installer:latest
+docker pull --platform linux/amd64 ghcr.io/cleanstart-containers/argocd-extension-installer:latest
 ```
 ```bash
-docker pull --platform linux/arm64 cleanstart/argocd-extension-installer:latest
+docker pull --platform linux/arm64 ghcr.io/cleanstart-containers/argocd-extension-installer:latest
 ```
 
 ---
