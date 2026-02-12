@@ -9,13 +9,15 @@ docker pull cleanstart/argocd-extension-installer:latest-dev
 - `docker pull` = "Download a program from the internet"
 - `cleanstart/argocd-extension-installer:latest` = "The name of the extension manager we want to download"
 
-### Step 3: Start the Extension Manager
+### Step 1: Start the Extension Manager
 **What we're doing:** We're going to start your ArgoCD extension manager using Docker.
+
+> Clone this repository
 
 ```bash
 # Navigate to the project folder
-cd images/argocd-extension-installer/sample-project/basic-extensions
-
+cd argocd-extension-installer/sample-project/basic-extensions
+```
 # Start the extension manager by compose yaml
 ```bash
 docker-compose build
@@ -29,18 +31,18 @@ docker-compose up -d
 - `-d` = "Run in the background (like starting an app and letting it run)"
 - This starts the extension manager and makes it ready to use
 
-### Step 4: Verify Everything is Working
+### Step 2: Verify Everything is Working
 **What we're doing:** We're checking that the extension manager started correctly.
 
 ```bash
 # Check if the container is running
 docker ps
+```
 
-
-### Step 5: Use-Case
+### Step 3: Use-Case
 **What we're doing:** We're making sure you can dependancy packages are getting installed and image running perfectly.
 
-### Step 6:Output
+### Step 4:Output
 ```bash
  ✔ Network basic-extensions_default         Created                                                                                                                              0.1s 
  ✔ Container my-argocd-extension-container  Created                                                                                                                              0.2s 
@@ -100,5 +102,6 @@ If you get stuck:
 2. **Ask your classmates or teacher**
 3. **Search online** (Google is your friend!)
 4. **Join programming communities** (Reddit r/learnprogramming, Discord servers)
+
 
 
