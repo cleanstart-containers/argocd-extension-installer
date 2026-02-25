@@ -13,7 +13,7 @@ Prerequisites:
 
 # Right Directory
 ```bash
-cd /cleanstart-containers/argocd-extension-installer/kubernetes - GKE/
+cd /cleanstart-containers/argocd-extension-installer/kubernetes\ -\ GKE/
 ```
 
 # Step 1: Create the Namespace
