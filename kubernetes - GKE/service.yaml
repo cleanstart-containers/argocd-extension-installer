@@ -1,11 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: argocd-extensions-app-service
+  name: argocd-extension-installer
+  namespace: argocd-extension
 spec:
   type: LoadBalancer
   ports:
   - port: 80
-    targetPort: 3000
+    targetPort: 8080
   selector:
-    app: argocd-extensions-app
+    app: argocd-extension-installer
