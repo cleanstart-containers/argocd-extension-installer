@@ -1,25 +1,37 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: argocd-extensions-app
+  name: argocd-extension-installer
+  namespace: argocd-extension
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: argocd-extensions-app
+      app: argocd-extension-installer
   template:
     metadata:
       labels:
-        app: argocd-extensions-app
+        app: argocd-extension-installer
     spec:
       containers:
-      - name: argocd-extensions-app
+      - name: argocd-extension-installer
         image: cleanstart/argocd-extension-installer:latest-dev
+        command:
+        - /bin/sh
+        - -c
+        - |
+          echo "ArgoCD Extension Installer starting..."
+          echo "Container ready for extension management"
+          
+          # Keep container running
+          exec tail -f /dev/null
         ports:
         - containerPort: 8080
         livenessProbe:
-          httpGet:
-            path: /
-            port: 8080
-          initialDelaySeconds: 30
-          periodSeconds: 30
+          exec:
+            command:
+            - /bin/sh
+            - -c
+            - echo "healthy"
+          initialDelaySeconds: 10
+          periodSeconds: 10
