@@ -105,7 +105,7 @@ docker pull --platform linux/arm64 ghcr.io/cleanstart-containers/argocd-extensio
 - **ArgoCD Extensions Documentation:** https://argo-cd.readthedocs.io/en/stable/developer-guide/extensions/
 - **Provenance / SBOM / Signature:** https://images.cleanstart.com/images/argocd-extension-installer
 - **Docker Hub:** https://hub.docker.com/r/cleanstart/argocd-extension-installer
-- **CleanStart All Images:** https://images.cleanstart.com
+- **CleanStart All Images:** https://images.cleanstart.com/images/argocd-extension-installer/details
 - **CleanStart Community Images:** https://hub.docker.com/u/cleanstart
 
 ---
